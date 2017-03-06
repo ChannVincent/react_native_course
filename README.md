@@ -4,6 +4,10 @@
 
 Follow react native course on Udemy :   
 https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/overview  
+
+Git :  
+https://github.com/StephenGrider/ReactNativeReduxCasts  
+
 Good platform to follow courses :  
 - You can ask question in the Q&R section and wait the instructor to respond.  
 - You have preview of courses to tease and show you how it looks like.
