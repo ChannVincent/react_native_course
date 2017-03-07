@@ -37,8 +37,11 @@ He has teached front end javascript to many engineers.
 - RN-15 : Code reuse - edit vs create
 - RN-16 : Bonus
 
-## Emulator
+## Development
 
+Amazing React native IDE (use for this course instead of doing all the starting setup) :   
+- https://www.decosoftware.com/  
+  
 Android emulator :  
 - to reload "index.android.js" you must go to dev menu "cmd + M" -> "Reload JS"
   
