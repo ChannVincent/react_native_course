@@ -36,3 +36,12 @@ He has teached front end javascript to many engineers.
 - RN-14 : Firebase as data store
 - RN-15 : Code reuse - edit vs create
 - RN-16 : Bonus
+
+## Emulator
+
+Android emulator :  
+- to reload "index.android.js" you must go to dev menu "cmd + M" -> "Reload JS"
+  
+iOS simulator :   
+- to reload "index.ios.js" you must press "cmd + R"
+- to go to dev menu "cmd + D"
