@@ -7,7 +7,7 @@ import AlbumList from './src/components/AlbumList';
 // create a component : javascript function that return some amount of JSX
 const App = () => {
   return (
-  <View>
+  <View style={{ flex: 1 }}>
     <Header headerText={'Albums'} />
     <AlbumList/>
   </View>    
