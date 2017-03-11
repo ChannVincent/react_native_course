@@ -13,9 +13,10 @@ const Header = (props) => {
   );
 };
 
+// use of Platform because all style attributes does not work on Android
 const styles = {
   viewStyle: {
-    backgroundColor: (Platform.OS === 'ios') ? '#f8f8f8' : '#dddddd',
+    backgroundColor: (Platform.OS === 'ios') ? '#f8f8f8' : '#eeeeee',
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,

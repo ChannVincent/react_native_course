@@ -23,7 +23,7 @@ He has teached front end javascript to many engineers.
 - RN-02 : Onwards
 - RN-03 : Great looking apps
 - RN-04 : Http request
-- RN-05 : Handling componant layout
+- RN-05 : Handling component layout
 - RN-06 : Authentication with Firebase
 - RN-06 : Processing authentication credentials
 - RN-07 : Digging deeper with redux
@@ -48,3 +48,19 @@ Android emulator :
 iOS simulator :   
 - to reload "index.ios.js" you must press "cmd + R"
 - to go to dev menu "cmd + D"
+
+## List of Albums application
+
+[Screenshot](albums.gif)
+
+First cross platform application rendered on iOS & Android.  
+Main notions learn during this course :
+- class import & export
+- destructured import
+- Functional component : return some static amount of JSX & pass some props
+- Class based component : component life cycle & states & setState()
+- map function : called on an array and return some JSX for each item of the array (ex: array.map(item => <Text>item.title<\/Text>))
+- npm install Axios : asynchronous http call 
+- styling attributes
+- flexBox & justifyContent
+- Linking library from 'react-native' to start url in native webview
