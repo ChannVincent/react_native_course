@@ -51,7 +51,7 @@ iOS simulator :
 
 ## List of Albums application
 
-![alt tag](albums.gif)
+![alt tag](albums.gif =200x200)
 
 First cross platform application rendered on iOS & Android.  
 Main notions learn during this course :
