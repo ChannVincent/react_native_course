@@ -51,7 +51,7 @@ iOS simulator :
 
 ## List of Albums application
 
-[Screenshot](albums.gif)
+![alt tag](albums.gif)
 
 First cross platform application rendered on iOS & Android.  
 Main notions learn during this course :
@@ -59,7 +59,7 @@ Main notions learn during this course :
 - destructured import
 - Functional component : return some static amount of JSX & pass some props
 - Class based component : component life cycle & states & setState()
-- map function : called on an array and return some JSX for each item of the array (ex: array.map(item => <Text>item.title<\/Text>))
+- map function : called on an array and return some JSX for each item of the array (ex: array.map(item => <Text>item.title</Text>))
 - npm install Axios : asynchronous http call 
 - styling attributes
 - flexBox & justifyContent
