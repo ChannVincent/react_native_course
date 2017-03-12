@@ -1,28 +1,32 @@
 import React, { Component } from 'react'
-import { TextInput } from 'react-native'
-import { Card, CardSection, Button } from './common';
+import { Card, CardSection, Button, Input } from './common';
 
 class LoginForm extends Component {
-  
-  state = { text: '' }
+  state = { 
+    email: '',
+    password: ''
+  }
   
   render() {
     return (
       <Card>
-        
         <CardSection>
-          <TextInput 
-            value={ this.state.text }
-            onChangeText={text => { 
-                this.setState({ text })
-                console.log(text);
-              }
-            }
-            style={{height: 50, width: 200}}/>
+          <Input 
+            placeholder='user@gmail.com'
+            label='Email'
+            value={ this.state.email }
+            onChangeText={ email => this.setState({ email }) }
+            />
         </CardSection>
         
         <CardSection>
-          <TextInput/>
+          <Input
+            secureTextEntry
+            placeholder='password'
+            label='Password'
+            value={ this.state.password }
+            onChangeText={ password => this.setState({ password }) }
+            />
         </CardSection>
         
         <CardSection>
@@ -30,7 +34,6 @@ class LoginForm extends Component {
             Login
           </Button>
         </CardSection>
-        
       </Card>
     )
   }
