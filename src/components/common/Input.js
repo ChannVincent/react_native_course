@@ -34,7 +34,7 @@ const styles = {
     paddingRight: 5,
     paddingLeft: 5,
     fontSize: 18,
-    lineHeight: 0,
+    lineHeight: 30,
     flex: 2
   }
 }
