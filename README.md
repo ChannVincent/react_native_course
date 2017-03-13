@@ -51,9 +51,17 @@ iOS simulator :
 
 Upgrade react native :  
 - $ cd MyProject
-- $ react-native-git-upgrade 0.38.0
+- $ react-native-git-upgrade 0.42.0
 
-## List of Albums application
+Init a new project with latest available react (15.4.2 currently) & react native version (0.42.0 currently) :
+- $ cd MyProject
+- $ react-native init Project
+
+To make this project work you must intall thoses modules :
+- $ npm install firebase
+- $ npm install axios
+
+## Application "List of Albums" 
 
 [small demo video](albums.gif)
 
@@ -68,3 +76,5 @@ Main notions learn during this course :
 - styling attributes
 - flexBox & justifyContent
 - Linking library from 'react-native' to start url in native webview
+
+## Application "List of Albums" 
