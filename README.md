@@ -49,6 +49,10 @@ iOS simulator :
 - to reload "index.ios.js" you must press "cmd + R"
 - to go to dev menu "cmd + D"
 
+Upgrade react native :  
+- $ cd MyProject
+- $ react-native-git-upgrade 0.38.0
+
 ## List of Albums application
 
 [small demo video](albums.gif)
