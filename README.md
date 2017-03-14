@@ -77,4 +77,16 @@ Main notions learn during this course :
 - flexBox & justifyContent
 - Linking library from 'react-native' to start url in native webview
 
-## Application "List of Albums" 
+## Application "Firebase Log in & Log out" 
+
+[small demo video](login_logout.gif)
+
+Simple application that handle log in & log out from firebase.   
+Main notions learn during this course :  
+- import folder library 
+- create firebase account "vincent.chann.engineer@gmail.com"
+- log in & log out from firebase 
+- handle wrong login / password
+- handle waiting time with Spinner (ActivityIndicator) & conditional rendering
+- bugfix by upgrading to react native 0.42.0 and react 15.4.2
+- handle firebase login status rendering at Application level (App.js) 
