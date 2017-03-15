@@ -60,6 +60,8 @@ Init a new project with latest available react (15.4.2 currently) & react native
 To make this project work you must intall thoses modules :
 - $ npm install firebase
 - $ npm install axios
+- $ npm install redux
+- $ npm install react-redux
 
 ## Application "List of Albums" 
 
