@@ -38,6 +38,8 @@ const styles = {
   }
 };
 
+// get state from reducers attributes
+// get ownProps equivalent of props from the component
 const mapStateToProps = (state, ownProps) => {
     const expanded = ownProps.library.id === state.selectedLibraryId;
     return { expanded }
