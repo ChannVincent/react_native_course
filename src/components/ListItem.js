@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, TouchableWithoutFeedback, LayoutAnimation, UIManager, Platform } from 'react-native';
 import { connect } from 'react-redux';
 import { CardSection } from './common';
 import * as actions from '../actions';
 
 class ListItem extends Component {
   
+  componentWillUpdate() {
+    if (Platform.OS === 'android') {
+      UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
+    }
+    LayoutAnimation.spring();
+  }
+  
   renderDescription() {
     const { library, expanded } = this.props;
     if (expanded) {
       return (
-        <Text>{ library.description }</Text>
+        <CardSection>
+          <Text>{ library.description }</Text>
+        </CardSection>
       )
     }
   }
