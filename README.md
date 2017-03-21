@@ -92,3 +92,33 @@ Main notions learn during this course :
 - handle waiting time with Spinner (ActivityIndicator) & conditional rendering
 - bugfix by upgrading to react native 0.42.0 and react 15.4.2
 - handle firebase login status rendering at Application level (App.js) 
+
+## Application "ListView & Redux"
+
+[small demo video](redux.gif)
+
+Simple ListView with animations that use Redux & React Redux :
+- you must create a Provider that will wrap your whole View and pass it a store : 
+<Provider store={createStore(reducers)}><View>[ ... ]</View></Provider>
+- create some reducers in a folder and combine them in index.js thanks to 'combineReducers' :
+export default combineReducers({ state1: Reducer1, state2: Reducer2 })
+- create a reducer : function that will return datas (array, string, integer, ... ) and get as props of its function (state, action) => {} where state is mapStateToProp pass to connect function and action is the action called.
+- create an action : function that return a plain javascript object with a type and a payload and get any props as parameters :
+const getRank = (idx) => { return { type: 'rank', payload: idx } }
+- mapStateToProps = (state, ownProps) => { return { stateOfComponent } }
+- at the end of your component file you must :
+export default connect(mapStateToProps, actions)(YourComponent)
+
+How it works :
+- You call an action on callback <TouchableWithoutFeedback onPress={() => { this.props.selectLibrary(id) }}>
+- This will cause the action creactor to return an action (selectLibrary) that will be sent to all of our reducers
+- then the reducers will rerun to assemble new application states
+- that states automatically sent down to mapStateToProps functions
+- causes our components to rerender
+=> view updates on the screen
+
+Import :
+- { connect, Provider } from 'react-redux';
+- { createStore, combineReducers } from 'redux';
+- reducers from './reducers';
+- actions from './actions';
