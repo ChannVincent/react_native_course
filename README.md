@@ -135,7 +135,7 @@ Start from scratch :
 - go on the simulator and click on the icon to launch the app
 
 New IDE : 
-- https://atom.io/
+- https://atom.io/  
 With plugins (preferences > install > packages) :
 - atom-beautify
 - react
