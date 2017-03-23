@@ -136,6 +136,7 @@ Start from scratch :
 
 New IDE : 
 - https://atom.io/  
+
 With plugins (preferences > install > packages) :
 - atom-beautify
 - react
