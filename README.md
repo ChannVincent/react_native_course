@@ -122,3 +122,20 @@ Import :
 - { createStore, combineReducers } from 'redux';
 - reducers from './reducers';
 - actions from './actions';
+
+## Application "Navigation App"
+
+Start from scratch :
+- react-native init NavigationApp
+- cd NavigationApp
+- react-native run-ios // it will run ios simulator
+- add "local.properties" file to android project and add sdk directory : sdk.dir=/Users/vincentchann/Library/Android/sdk
+- launch simulator from Android Studio or connect a phone
+- react-native run-android // it will install on the android simulator
+- go on the simulator and click on the icon to launch the app
+
+New IDE : 
+- https://atom.io/
+With plugins (preferences > install > packages) :
+- atom-beautify
+- react
