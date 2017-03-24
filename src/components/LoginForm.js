@@ -37,9 +37,10 @@ class LoginForm extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  const { email, password } = state.auth;
   return ({
-    email: state.auth.email,
-    password: state.auth.password
+    email,
+    password
   })
 }
 
