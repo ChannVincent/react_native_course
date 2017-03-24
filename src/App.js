@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 import { View, Text } from 'react-native';
 import reducers from './reducers';
 import firebase from 'firebase';
+import LoginForm from './components/LoginForm'
 
 class App extends Component {
 
@@ -15,16 +16,14 @@ class App extends Component {
       storageBucket: "test-a2ff6.appspot.com",
       messagingSenderId: "825042305320"
     };
-    // only initialize once
+    // only initialize once or throw errors
     firebase.initializeApp(config);
   }
 
   render() {
     return (
       <Provider store={ createStore(reducers) }>
-        <View>
-          <Text>Hello React</Text>
-        </View>
+          <LoginForm/>
       </Provider>
     );
   }
