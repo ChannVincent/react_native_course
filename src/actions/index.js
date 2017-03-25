@@ -1,4 +1,4 @@
-import { EMAIL_CHANGED, PASSWORD_CHANGED, LOGIN_USER_SUCCESS, LOGIN_USER_FAIL } from './types';
+import { EMAIL_CHANGED, PASSWORD_CHANGED, LOGIN_USER_SUCCESS, LOGIN_USER_FAIL, LOGIN_USER_ATTEMPT } from './types';
 import firebase from 'firebase';
 
 export const emailChanged = (text) => {
@@ -16,9 +16,14 @@ export const passwordChanged = (text) => {
 }
 
 export const loginUser = ({ email, password }) => {
-  // return a function thanks to redux-thunk
-  // then when the async task will finish, then() function will be called and dispatch the action
+  
+  // redux-thunk async dispatch function
   return (dispatch) => {
+    // dispatch login attempt
+    dispatch({
+      type: LOGIN_USER_ATTEMPT
+    })
+  
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((user) => {
       // dispatch an action when the task is complete
