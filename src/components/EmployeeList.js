@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { ListView, View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { employeesFetch } from '../actions';
+import ListItem from './ListItem';
 
 class EmployeeList extends Component {
   componentWillMount() {
@@ -17,6 +18,10 @@ class EmployeeList extends Component {
     this.createDataSource(nextProps);
   }
   
+  renderRow(employee) {
+    return <ListItem employee={ employee } />
+  }
+  
   createDataSource({ employees }) {
     const ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 != r2
@@ -27,9 +32,11 @@ class EmployeeList extends Component {
   render() {
     console.log(this.props);
     return (
-      <View>
-        <Text>Employee List</Text>
-      </View>
+      <ListView
+        enableEmptySections
+        dataSource={ this.dataSource }
+        renderRow={ this.renderRow }
+        />
     )
   }
 }
