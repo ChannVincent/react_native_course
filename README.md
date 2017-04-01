@@ -125,18 +125,16 @@ Import :
 
 ## Application "Navigation App"
 
-Start from scratch :
-- react-native init NavigationApp
-- cd NavigationApp
-- react-native run-ios // it will run ios simulator
-- add "local.properties" file to android project and add sdk directory : sdk.dir=/Users/vincentchann/Library/Android/sdk
-- launch simulator from Android Studio or connect a phone
-- react-native run-android // it will install on the android simulator
-- go on the simulator and click on the icon to launch the app
+[small demo video](employee_manager.gif)
 
-New IDE : 
-- https://atom.io/  
+Restart from scratch.
+- Fully reduxified application : authentication, listView, delete / update / create form data.
+- Fully linked to firebase for realtime updates : listView fetched from firebase & create / update / delete form data from firebase.
+- Create rules for firebase database : each user can only access his employee's list
+- React-native-router-flux for managing multiple scenes navigation inside router
+- lodash library to transform firebase object into simple arrays
+- Every state doesn't have to pass by Redux, sometimes a simple state can handle it (ex: Modal)
 
-With plugins (preferences > install > packages) :
-- atom-beautify
-- react
+## Certificate 
+
+[Certificate for finishing this course](certificate.jpg)
