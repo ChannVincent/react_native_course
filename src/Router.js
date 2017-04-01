@@ -4,6 +4,7 @@ import { Platform } from 'react-native'
 import LoginForm from './components/LoginForm'
 import EmployeeList from './components/EmployeeList'
 import EmployeeCreate from './components/EmployeeCreate'
+import EmployeeEdit from './components/EmployeeEdit'
 
 const RouterComponent = () => {
     return (
@@ -27,6 +28,11 @@ const RouterComponent = () => {
             key='employeeCreate'
             title='Create employee'
             component={ EmployeeCreate }
+            />
+          <Scene
+            key='employeeEdit'
+            title='Edit employee'
+            component={ EmployeeEdit }
             />
         </Scene>
       </Router>
