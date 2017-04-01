@@ -6,6 +6,7 @@ import { employeeUpdate, employeeCreate } from '../actions';
 
 class EmployeeCreate extends Component {
   render() {
+    console.log(this.props.employee);
     const { name, phone, employeeUpdate, shift } = this.props;
     return (
       <View>
@@ -13,7 +14,7 @@ class EmployeeCreate extends Component {
           <CardSection>
             <Input
               label="Name"
-              placeHolder="Jane" 
+              placeholder="Jane" 
               onChangeText={ (name) => { employeeUpdate({ prop: 'name', value: name }) } }
               value={ name }
               />
@@ -22,7 +23,7 @@ class EmployeeCreate extends Component {
           <CardSection>
             <Input 
               label="Phone"
-              placeHolder="555-555-5555"
+              placeholder="555-555-5555"
               onChangeText={ (phone) => { employeeUpdate({ prop: 'phone', value: phone }) } }
               value={ phone }
               />
